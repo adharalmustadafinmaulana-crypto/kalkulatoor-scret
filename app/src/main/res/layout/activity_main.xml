@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#121212">
+
+    <!-- Layar / Display Kalkulator -->
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#1E1E1E"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:gravity="bottom|end"
+        android:padding="16dp"
+        android:text="0" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Baris Tombol 1: C, /, *, - -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:weightSum="4">
+        <Button android:id="@+id/btnClear" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_margin="4dp" android:text="C" android:textSize="20sp" android:backgroundTint="#D32F2F"/>
+        <Button android:id="@+id/btnDiv" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_margin="4dp" android:text="/" android:textSize="20sp"/>
+        <Button android:id="@+id/btnMul" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_margin="4dp" android:text="x" android:textSize="20sp"/>
+        <Button android:id="@+id/btnSub" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_margin="4dp" android:text="-" android:textSize="20sp"/>
+    </LinearLayout>
+
+    <!-- Baris Tombol 2: 7, 8, 9, + -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:weightSum="4">
+        <Button android:id="@+id/btn7" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_margin="4dp" android:text="7" android:textSize="20sp"/>
+        <Button android:id="@+id/btn8" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_margin="4dp" android:text="8" android:textSize="20sp"/>
+        <Button android:id="@+id/btn9" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_margin="4dp" android:text="9" android:textSize="20sp"/>
+        <Button android:id="@+id/btnAdd" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_margin="4dp" android:text="+" android:textSize="20sp"/>
+    </LinearLayout>
+
+    <!-- Baris Tombol 3: 4, 5, 6 -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:weightSum="4">
+        <Button android:id="@+id/btn4" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_margin="4dp" android:text="4" android:textSize="20sp"/>
+        <Button android:id="@+id/btn5" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_margin="4dp" android:text="5" android:textSize="20sp"/>
+        <Button android:id="@+id/btn6" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_margin="4dp" android:text="6" android:textSize="20sp"/>
+        <Space android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_margin="4dp"/>
+    </LinearLayout>
+
+    <!-- Baris Tombol 4: 1, 2, 3, = -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:weightSum="4">
+        <Button android:id="@+id/btn1" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_margin="4dp" android:text="1" android:textSize="20sp"/>
+        <Button android:id="@+id/btn2" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_margin="4dp" android:text="2" android:textSize="20sp"/>
+        <Button android:id="@+id/btn3" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_margin="4dp" android:text="3" android:textSize="20sp"/>
+        <Button android:id="@+id/btnEquals" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_margin="4dp" android:text="=" android:textSize="20sp" android:backgroundTint="#388E3C"/>
+    </LinearLayout>
+
+    <!-- Baris Tombol 5: 0 -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:weightSum="4">
+        <Button android:id="@+id/btn0" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="2" android:layout_margin="4dp" android:text="0" android:textSize="20sp"/>
+        <Space android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="2" android:layout_margin="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>
